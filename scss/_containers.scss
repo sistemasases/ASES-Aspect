@@ -1,0 +1,14 @@
+$container_base_padding: 1em;
+$container_base_margin: 0px 0px 0px 0px;
+
+.ases-container{
+    margin: $container_base_margin;
+    padding: $container_base_padding;
+    display: flex;
+}
+
+.ases-container-fluid{
+    margin: $container_base_marginx;
+    padding: $container_base_padding;
+    display: flex;
+}
