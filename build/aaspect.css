@@ -1,10 +1,13 @@
-.ases-container-fluid {
+.ases-container {
   margin: 0px 0px 0px 0px;
+  padding: 1em;
   display: flex;
 }
 
-body {
+.ases-container-fluid {
   margin: 0px 0px 0px 0px;
+  padding: 1em;
+  display: flex;
 }
 
 /*# sourceMappingURL=aaspect.css.map */
