@@ -18,6 +18,12 @@ $_containers_base_padding_bottom: 0px;
 $_containers_base_padding_left: 15px;
 $_grid_number_columns: 12;
 $_grid_col_base_padding: 0px;
+$_grid_base: (
+    ('xs', 0, 767px),
+    ('sm', 768px, 991px),
+    ('md', 992px, 1199px),
+    ('lg', 1200px, 'inf')
+);
 @import '_containers.scss';
 @import '_grid.scss';
 //--------------
