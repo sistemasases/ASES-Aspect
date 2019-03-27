@@ -1,0 +1,16 @@
+html{
+    body{
+        font-family: $_general_font_family;
+        font-size: $_general_size;
+        line-height: $_general_height;
+        color: $_general_color;
+        background-color: $_general_background_color;
+        margin: $_general_margin;
+    }
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
