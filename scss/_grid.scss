@@ -1,6 +1,14 @@
 // Require previous definition of (int) $_grid_number_columns.
 // Require previous definition of (int) $_grid_col_base_padding.
 
+@mixin col-base{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: #{$_containers_base_padding_right};
+    padding-left: #{$_containers_base_padding_left};
+}
+
 .ases-container-fluid{
     .ases-row{
         margin-left: -#{$_containers_base_padding_left};
@@ -12,41 +20,25 @@
     @for $_col from 1 through $_grid_number_columns {
         @media(min-width: 1200px) {
             .ases-col-lg-#{$_col} {
-                float: left;
-                position: relative;
-                min-height: 1px;
-                padding-right: #{_containers_base_padding_right};
-                padding-left: #{_containers_base_padding_left};
+                @include col-base;
                 width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
             }
         }
         @media(min-width: 992px) and (max-width: 1199px) {
             .ases-col-md-#{$_col} {
-                float: left;
-                position: relative;
-                min-height: 1px;
-                padding-right: #{_containers_base_padding_right};
-                padding-left: #{_containers_base_padding_left};
+                @include col-base;
                 width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
             }
         }
         @media (min-width: 768px) and (max-width: 991px) {
             .ases-col-sm-#{$_col} {
-                float: left;
-                position: relative;
-                min-height: 1px;
-                padding-right: #{_containers_base_padding_right};
-                padding-left: #{_containers_base_padding_left};
+                @include col-base;
                 width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
             }
         }
         @media (min-width: 0px) and (max-width: 767px) {
             .ases-col-xs-#{$_col} {
-                float: left;
-                position: relative;
-                min-height: 1px;
-                padding-right: #{_containers_base_padding_right};
-                padding-left: #{_containers_base_padding_left};
+                @include col-base;
                 width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
             }
         }
