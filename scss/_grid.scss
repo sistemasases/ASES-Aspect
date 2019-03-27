@@ -1,22 +1,47 @@
 // Require previous definition of (int) $_grid_number_columns.
 // Require previous definition of (int) $_grid_col_base_padding.
 
+@mixin ases_col-base{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: #{$_containers_base_padding_right};
+    padding-left: #{$_containers_base_padding_left};
+}
+
+@mixin mq_col_base($col, $grid_number_columns){
+    @include ases_col-base;
+    width: calc( ( 100% / #{$grid_number_columns} ) * #{$col} );
+}
+
 .ases-container-fluid{
     .ases-row{
-        margin-left: -#{$_containers_base_padding_right};
+        margin-left: -#{$_containers_base_padding_left};
         margin-right: -#{$_containers_base_padding_right};
     }
 }
 
 .ases-row{
     @for $_col from 1 through $_grid_number_columns {
-        .ases-col-#{$_col} {
-            float: left;
-            position: relative;
-            min-height: 1px;
-            padding-right: #{_containers_base_padding_right};
-            padding-left: #{_containers_base_padding_left};
-            width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+        @each $_col_space in $_grid_base{
+
+            $col_namespace: nth($_col_space, 1);
+            $min_width: nth($_col_space, 2);
+            $max_width: nth($_col_space, 3);
+
+            @if $max-width == 'inf' {
+                @media(min-width: #{$min_width}) {
+                    .ases-col-#{$col_namespace}-#{$_col} {
+                        @include mq_col_base(#{$_col}, #{$_grid_number_columns});
+                    }
+                }
+            } @else{
+                @media(min-width: #{$min_width}) and (max-width: #{$max_width})  {
+                    .ases-col-#{$col_namespace}-#{$_col} {
+                        @include mq_col_base(#{$_col}, #{$_grid_number_columns});
+                    }
+                }
+            }
         }
     }
 }
