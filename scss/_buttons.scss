@@ -1,7 +1,31 @@
+.ases-btn{
+    display: inline-block;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ases-btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
 @mixin mq_btn_base($min_width){
-    margin: 1px;
-    padding: calc( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.2272 );
-    font-size: calc( ( #{$min_width} * #{$_buttons_min_width_padding_relation} ) - ( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.2272 ) )
+    margin: 0px;
+    padding: calc( (#{$min_width} * #{$_buttons_min_width_padding_relation} * 0.305)/2 );
+    font-size: calc( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.39 )
 }
 
 @each $_col_space in $_grid_base{
