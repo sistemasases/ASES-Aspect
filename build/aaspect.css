@@ -523,4 +523,28 @@ html body {
   }
 }
 
+.ases-btn-xs {
+  margin: 1px;
+  padding: calc( 767px * 0.00366666 * 0.2272 );
+  font-size: calc( ( 767px * 0.00366666 ) - ( 767px * 0.00366666 * 0.2272 ) );
+}
+
+.ases-btn-sm {
+  margin: 1px;
+  padding: calc( 991px * 0.00366666 * 0.2272 );
+  font-size: calc( ( 991px * 0.00366666 ) - ( 991px * 0.00366666 * 0.2272 ) );
+}
+
+.ases-btn-md {
+  margin: 1px;
+  padding: calc( 1199px * 0.00366666 * 0.2272 );
+  font-size: calc( ( 1199px * 0.00366666 ) - ( 1199px * 0.00366666 * 0.2272 ) );
+}
+
+.ases-btn-lg {
+  margin: 1px;
+  padding: calc( 1200px * 0.00366666 * 0.2272 );
+  font-size: calc( ( 1200px * 0.00366666 ) - ( 1200px * 0.00366666 * 0.2272 ) );
+}
+
 /*# sourceMappingURL=aaspect.css.map */
