@@ -1,9 +1,22 @@
-$_containers_base_padding: 0.5em;
-$_containers_base_margin: 0px 0px 0px 0px;
-@import '_containers.scss';
+$_general_font_family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$_general_size: 14px;
+$_general_height: 1.42857143;
+$_general_color: #333;
+$_general_background_color: #fff;
+$general_margin: 0;
+@import '_general.scss';
 //--------------
-$_grid_number_columns: 15;
+$_containers_base_margin_top: 0px;
+$_containers_base_margin_right: auto;
+$_containers_base_margin_bottom: 0px;
+$_containers_base_margin_left: auto;
+$_containers_base_padding_top: 0px;
+$_containers_base_padding_right: 15px;
+$_containers_base_padding_bottom: 0px;
+$_containers_base_padding_left: 15px;
+$_grid_number_columns: 12;
 $_grid_col_base_padding: 0px;
+@import '_containers.scss';
 @import '_grid.scss';
 //--------------
                     
