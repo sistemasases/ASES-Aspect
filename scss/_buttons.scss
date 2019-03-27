@@ -1,0 +1,22 @@
+@mixin mq_btn_base($min_width){
+    margin: 1px;
+    padding: calc( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.2272 );
+    font-size: calc( ( #{$min_width} * #{$_buttons_min_width_padding_relation} ) - ( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.2272 ) )
+}
+
+@each $_col_space in $_grid_base{
+
+    $col_namespace: nth($_col_space, 1);
+    $min_width: nth($_col_space, 2);
+    $max_width: nth($_col_space, 3);
+
+    @if $max-width == 'inf' {
+        .ases-btn-#{$col_namespace} {
+            @include mq_btn_base(#{$min_width});
+        }
+    } @else{
+        .ases-btn-#{$col_namespace} {
+            @include mq_btn_base(#{$max_width});
+        }
+    }
+}
