@@ -14,8 +14,8 @@
             float: left;
             position: relative;
             min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: #{_containers_base_padding_right};
+            padding-left: #{_containers_base_padding_left};
             width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
         }
     }
