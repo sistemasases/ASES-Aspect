@@ -3,20 +3,52 @@
 
 .ases-container-fluid{
     .ases-row{
-        margin-left: -#{$_containers_base_padding_right};
+        margin-left: -#{$_containers_base_padding_left};
         margin-right: -#{$_containers_base_padding_right};
     }
 }
 
 .ases-row{
     @for $_col from 1 through $_grid_number_columns {
-        .ases-col-#{$_col} {
-            float: left;
-            position: relative;
-            min-height: 1px;
-            padding-right: #{_containers_base_padding_right};
-            padding-left: #{_containers_base_padding_left};
-            width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+        @media(min-width: 1200px) {
+            .ases-col-lg-#{$_col} {
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: #{_containers_base_padding_right};
+                padding-left: #{_containers_base_padding_left};
+                width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+            }
+        }
+        @media(min-width: 992px) and (max-width: 1199px) {
+            .ases-col-md-#{$_col} {
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: #{_containers_base_padding_right};
+                padding-left: #{_containers_base_padding_left};
+                width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .ases-col-sm-#{$_col} {
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: #{_containers_base_padding_right};
+                padding-left: #{_containers_base_padding_left};
+                width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+            }
+        }
+        @media (min-width: 0px) and (max-width: 767px) {
+            .ases-col-xs-#{$_col} {
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: #{_containers_base_padding_right};
+                padding-left: #{_containers_base_padding_left};
+                width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+            }
         }
     }
 }
