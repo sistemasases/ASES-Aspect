@@ -1,5 +1,7 @@
 // Require previous definition of (int) $_grid_number_columns.
-// Require previous definition of (int) $_grid_col_base_padding.
+// Require previous definition of (int) $_containers_base_padding_right.
+// Require previous definition of (int) $_containers_base_padding_left.
+// Require previous definition of (int) $_grid_base.
 
 @mixin ases_col-base{
     float: left;
