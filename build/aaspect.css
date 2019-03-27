@@ -12,80 +12,67 @@
 
 .ases-row {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .ases-row .ases-col-1 {
-  width: calc( ( 100% / 15 ) * 1 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 1 );
   padding: 0px;
 }
 .ases-row .ases-col-2 {
-  width: calc( ( 100% / 15 ) * 2 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 2 );
   padding: 0px;
 }
 .ases-row .ases-col-3 {
-  width: calc( ( 100% / 15 ) * 3 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 3 );
   padding: 0px;
 }
 .ases-row .ases-col-4 {
-  width: calc( ( 100% / 15 ) * 4 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 4 );
   padding: 0px;
 }
 .ases-row .ases-col-5 {
-  width: calc( ( 100% / 15 ) * 5 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 5 );
   padding: 0px;
 }
 .ases-row .ases-col-6 {
-  width: calc( ( 100% / 15 ) * 6 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 6 );
   padding: 0px;
 }
 .ases-row .ases-col-7 {
-  width: calc( ( 100% / 15 ) * 7 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 7 );
   padding: 0px;
 }
 .ases-row .ases-col-8 {
-  width: calc( ( 100% / 15 ) * 8 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 8 );
   padding: 0px;
 }
 .ases-row .ases-col-9 {
-  width: calc( ( 100% / 15 ) * 9 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 9 );
   padding: 0px;
 }
 .ases-row .ases-col-10 {
-  width: calc( ( 100% / 15 ) * 10 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 10 );
   padding: 0px;
 }
 .ases-row .ases-col-11 {
-  width: calc( ( 100% / 15 ) * 11 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 11 );
   padding: 0px;
 }
 .ases-row .ases-col-12 {
-  width: calc( ( 100% / 15 ) * 12 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 12 );
   padding: 0px;
 }
 .ases-row .ases-col-13 {
-  width: calc( ( 100% / 15 ) * 13 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 13 );
   padding: 0px;
 }
 .ases-row .ases-col-14 {
-  width: calc( ( 100% / 15 ) * 14 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 14 );
   padding: 0px;
 }
 .ases-row .ases-col-15 {
-  width: calc( ( 100% / 15 ) * 15 );
-  float: left;
+  flex: calc( ( 100% / 15 ) * 15 );
   padding: 0px;
 }
 

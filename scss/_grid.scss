@@ -3,10 +3,11 @@
 
 .ases-row{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     @for $_col from 1 through $_grid_number_columns {
         .ases-col-#{$_col} {
-            width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
-            float: left;
+            flex: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
             padding: #{$_grid_col_base_padding};
         }
     }
