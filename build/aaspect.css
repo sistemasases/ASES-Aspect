@@ -42,18 +42,8 @@ html body {
   margin-right: -15px;
 }
 
-@media (min-width: 1200px) {
-  .ases-row .ases-col-lg-1 {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 1 );
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-1 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-1 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -72,8 +62,8 @@ html body {
     width: calc( ( 100% / 12 ) * 1 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-1 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-1 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -83,17 +73,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-2 {
+  .ases-row .ases-col-lg-1 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 2 );
+    width: calc( ( 100% / 12 ) * 1 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-2 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-2 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -112,8 +102,8 @@ html body {
     width: calc( ( 100% / 12 ) * 2 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-2 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-2 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -123,17 +113,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-3 {
+  .ases-row .ases-col-lg-2 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 3 );
+    width: calc( ( 100% / 12 ) * 2 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-3 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-3 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -152,8 +142,8 @@ html body {
     width: calc( ( 100% / 12 ) * 3 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-3 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-3 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -163,17 +153,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-4 {
+  .ases-row .ases-col-lg-3 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 4 );
+    width: calc( ( 100% / 12 ) * 3 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-4 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-4 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -192,8 +182,8 @@ html body {
     width: calc( ( 100% / 12 ) * 4 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-4 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-4 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -203,17 +193,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-5 {
+  .ases-row .ases-col-lg-4 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 5 );
+    width: calc( ( 100% / 12 ) * 4 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-5 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-5 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -232,8 +222,8 @@ html body {
     width: calc( ( 100% / 12 ) * 5 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-5 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-5 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -243,17 +233,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-6 {
+  .ases-row .ases-col-lg-5 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 6 );
+    width: calc( ( 100% / 12 ) * 5 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-6 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-6 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -272,8 +262,8 @@ html body {
     width: calc( ( 100% / 12 ) * 6 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-6 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-6 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -283,17 +273,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-7 {
+  .ases-row .ases-col-lg-6 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 7 );
+    width: calc( ( 100% / 12 ) * 6 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-7 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-7 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -312,8 +302,8 @@ html body {
     width: calc( ( 100% / 12 ) * 7 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-7 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-7 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -323,17 +313,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-8 {
+  .ases-row .ases-col-lg-7 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 8 );
+    width: calc( ( 100% / 12 ) * 7 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-8 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-8 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -352,8 +342,8 @@ html body {
     width: calc( ( 100% / 12 ) * 8 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-8 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-8 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -363,17 +353,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-9 {
+  .ases-row .ases-col-lg-8 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 9 );
+    width: calc( ( 100% / 12 ) * 8 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-9 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-9 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -392,8 +382,8 @@ html body {
     width: calc( ( 100% / 12 ) * 9 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-9 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-9 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -403,17 +393,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-10 {
+  .ases-row .ases-col-lg-9 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 10 );
+    width: calc( ( 100% / 12 ) * 9 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-10 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-10 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -432,8 +422,8 @@ html body {
     width: calc( ( 100% / 12 ) * 10 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-10 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-10 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -443,17 +433,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-11 {
+  .ases-row .ases-col-lg-10 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 11 );
+    width: calc( ( 100% / 12 ) * 10 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-11 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-11 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -472,8 +462,8 @@ html body {
     width: calc( ( 100% / 12 ) * 11 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-11 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-11 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -483,17 +473,17 @@ html body {
   }
 }
 @media (min-width: 1200px) {
-  .ases-row .ases-col-lg-12 {
+  .ases-row .ases-col-lg-11 {
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    width: calc( ( 100% / 12 ) * 12 );
+    width: calc( ( 100% / 12 ) * 11 );
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ases-row .ases-col-md-12 {
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-row .ases-col-xs-12 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -512,8 +502,18 @@ html body {
     width: calc( ( 100% / 12 ) * 12 );
   }
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .ases-row .ases-col-xs-12 {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-row .ases-col-md-12 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: calc( ( 100% / 12 ) * 12 );
+  }
+}
+@media (min-width: 1200px) {
+  .ases-row .ases-col-lg-12 {
     float: left;
     position: relative;
     min-height: 1px;
