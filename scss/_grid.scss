@@ -1,0 +1,13 @@
+// Require previous definition of (int) $_grid_number_columns.
+// Require previous definition of (int) $_grid_col_base_padding.
+
+.ases-row{
+    width: 100%;
+    @for $_col from 1 through $_grid_number_columns {
+        .ases-col-#{$_col} {
+            width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
+            float: left;
+            padding: #{$_grid_col_base_padding};
+        }
+    }
+}

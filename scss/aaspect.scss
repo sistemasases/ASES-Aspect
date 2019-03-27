@@ -1,5 +1,9 @@
-$_containers_base_padding: 1em;
+$_containers_base_padding: 0.5em;
 $_containers_base_margin: 0px 0px 0px 0px;
 @import '_containers.scss';
-
-
+//--------------
+$_grid_number_columns: 15;
+$_grid_col_base_padding: 0px;
+@import '_grid.scss';
+//--------------
+                    

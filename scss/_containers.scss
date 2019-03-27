@@ -1,3 +1,6 @@
+// Require previous definition of (int) $_containers_base_margin.
+// Require previous definition of (int) $_containers_base_padding.
+
 .ases-container{
     margin: $_containers_base_margin;
     padding: $_containers_base_padding;
