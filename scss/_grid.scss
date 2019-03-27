@@ -1,14 +1,22 @@
 // Require previous definition of (int) $_grid_number_columns.
 // Require previous definition of (int) $_grid_col_base_padding.
 
+.ases-container-fluid{
+    .ases-row{
+        margin-left: -#{$_containers_base_padding_right};
+        margin-right: -#{$_containers_base_padding_right};
+    }
+}
+
 .ases-row{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     @for $_col from 1 through $_grid_number_columns {
         .ases-col-#{$_col} {
-            flex: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
-            padding: #{$_grid_col_base_padding};
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: calc( ( 100% / #{$_grid_number_columns} ) * #{$_col} );
         }
     }
 }
