@@ -1,0 +1,46 @@
+.ases-btn{
+    display: inline-block;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ases-btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+@mixin mq_btn_base($min_width){
+    margin: 0px;
+    padding: calc( (#{$min_width} * #{$_buttons_min_width_padding_relation} * 0.305)/2 );
+    font-size: calc( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.39 )
+}
+
+@each $_col_space in $_grid_base{
+
+    $col_namespace: nth($_col_space, 1);
+    $min_width: nth($_col_space, 2);
+    $max_width: nth($_col_space, 3);
+
+    @if $max-width == 'inf' {
+        .ases-btn-#{$col_namespace} {
+            @include mq_btn_base(#{$min_width});
+        }
+    } @else{
+        .ases-btn-#{$col_namespace} {
+            @include mq_btn_base(#{$max_width});
+        }
+    }
+}

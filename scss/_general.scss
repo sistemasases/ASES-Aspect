@@ -1,3 +1,10 @@
+// Require previous definition of (Family) $_general_font_family
+// Require previous definition of (size) $_general_size
+// Require previous definition of (size) $_general_height
+// Require previous definition of (RGB|#) $_general_color
+// Require previous definition of (RGB|#) $_general_background_color
+// Require previous definition of (size) $_general_margin
+
 html{
     body{
         font-family: $_general_font_family;
