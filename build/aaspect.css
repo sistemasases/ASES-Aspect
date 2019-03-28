@@ -592,8 +592,8 @@ html body {
 
 .ases-btn-lg {
   margin: 0px;
-  padding: calc( ( 100% * 0.0366666 * 0.305 ) / 2 );
-  font-size: calc( 100% * 0.0366666 * 0.39 );
+  padding: calc( ( calc( 1200px * 1.2920 ) * 0.0366666 * 0.305 ) / 2 );
+  font-size: calc( calc( 1200px * 1.2920 ) * 0.0366666 * 0.39 );
 }
 
 /*# sourceMappingURL=aaspect.css.map */

@@ -61,7 +61,7 @@
 
     @if $max-width == 'inf' {
         .ases-btn-#{$col_namespace} {
-            @include mq_btn_base( 100% );
+            @include mq_btn_base( calc( #{$min_width} * 1.2920 ) );
         }
     } @else{
         .ases-btn-#{$col_namespace} {
