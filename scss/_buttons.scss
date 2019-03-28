@@ -22,9 +22,34 @@
     border-color: #ccc;
 }
 
+.ases-btn:hover,
+.ases-btn:focus,
+.ases-btn.focus {
+  color: #333;
+  background-color: #ddd;
+  text-decoration: none;
+}
+
+.ases-btn:active,
+.ases-btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.ases-btn.disabled,
+.ases-btn[disabled]{
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 @mixin mq_btn_base($min_width){
     margin: 0px;
-    padding: calc( (#{$min_width} * #{$_buttons_min_width_padding_relation} * 0.305)/2 );
+    padding: calc( ( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.305 ) / 2 );
     font-size: calc( #{$min_width} * #{$_buttons_min_width_padding_relation} * 0.39 )
 }
 
@@ -36,7 +61,7 @@
 
     @if $max-width == 'inf' {
         .ases-btn-#{$col_namespace} {
-            @include mq_btn_base(#{$min_width});
+            @include mq_btn_base( 100% );
         }
     } @else{
         .ases-btn-#{$col_namespace} {
