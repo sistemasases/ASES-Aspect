@@ -16,6 +16,10 @@
     width: calc( ( 100% / #{$grid_number_columns} ) * #{$col} );
 }
 
+@mixin mq_col_offset_base($col, $grid_number_columns){
+    margin-left: calc( ( 100% / #{$grid_number_columns} ) * #{$col} );
+}
+
 .ases-container-fluid{
     .ases-row{
         margin-left: -#{$_containers_base_padding_left};
@@ -36,11 +40,17 @@
                     .ases-col-#{$col_namespace}-#{$_col} {
                         @include mq_col_base(#{$_col}, #{$_grid_number_columns});
                     }
+                    .ases-col-#{$col_namespace}-offset-#{$_col} {
+                        @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
+                    }
                 }
             } @else{
                 @media(min-width: #{$min_width}) and (max-width: #{$max_width})  {
                     .ases-col-#{$col_namespace}-#{$_col} {
                         @include mq_col_base(#{$_col}, #{$_grid_number_columns});
+                    }
+                    .ases-col-#{$col_namespace}-offset-#{$_col} {
+                        @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
                     }
                 }
             }
