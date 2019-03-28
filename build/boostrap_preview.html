@@ -12,23 +12,15 @@
         <script>
             var painted = false;
             function paintDivToogle(){
-                if( !painted ){
-                    var elements = document.getElementsByTagName("div");              
-                    Array.prototype.forEach.call(elements, function(element) {
-                        element.style.borderWidth = "1px";
-                        element.style.borderStyle = "solid";
-                        element.style.borderColor = "red";
-                    });   
-                    painted = true;
-                }else{
-                    var elements = document.getElementsByTagName("div");              
-                    Array.prototype.forEach.call(elements, function(element) {
-                        element.style.borderWidth = "0px";
-                        element.style.borderStyle = "solid";
-                        element.style.borderColor = "transparent";
-                    });    
-                    painted = false;
-                }
+                var elements = document.getElementsByTagName("div"); 
+                var borderWidth = 1;
+                if( painted ) borderWidth = 0;
+                painted = !painted;
+                Array.prototype.forEach.call(elements, function(element) {
+                    element.style.borderWidth = borderWidth + "px";
+                    element.style.borderStyle = "solid";
+                    element.style.borderColor = "red";
+                }); 
             }
         </script>
     </head>
