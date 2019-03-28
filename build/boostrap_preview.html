@@ -9,35 +9,76 @@
          <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <title>Document</title>
-        <style>
-            div{
-                border: 1px solid red;
+        <script>
+            var painted = false;
+            function paintDivToogle(){
+                if( !painted ){
+                    var elements = document.getElementsByTagName("div");              
+                    Array.prototype.forEach.call(elements, function(element) {
+                        element.style.borderWidth = "1px";
+                        element.style.borderStyle = "solid";
+                        element.style.borderColor = "red";
+                    });   
+                    painted = true;
+                }else{
+                    var elements = document.getElementsByTagName("div");              
+                    Array.prototype.forEach.call(elements, function(element) {
+                        element.style.borderWidth = "0px";
+                        element.style.borderStyle = "solid";
+                        element.style.borderColor = "transparent";
+                    });    
+                    painted = false;
+                }
             }
-        </style>
+        </script>
     </head>
     <body>
+        <button onclick="paintDivToogle()">Pintar div's</button>
         <div class="container-fluid">
             <div class="row">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+                        <form action="">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name=""  class="form-control" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-lg-offset-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut iure doloribus sed ex facere, nihil commodi iste provident eius voluptate error voluptatem nam officia sunt similique nemo ipsam illum.
-                    <button class="btn btn-default btn-xs">.ases-btn-xs</button>
-                    <button class="btn btn-default btn-sm">.ases-btn-sm</button>
-                    <button class="btn btn-default btn-md">.ases-btn-md</button>
-                    <button class="btn btn-default btn-lg">.ases-btn-lg</button>
+                    <button class="btn btn-default btn-xs">.btn-xs</button>
+                    <button class="btn btn-default btn-sm">.btn-sm</button>
+                    <button class="btn btn-default btn-md">.btn-md</button>
+                    <button class="btn btn-default btn-lg">.btn-lg</button>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut iure doloribus sed ex facere, nihil commodi iste provident eius voluptate error voluptatem nam officia sunt similique nemo ipsam illum.
-                    <button class="btn btn-default">.ases-btn-xs</button>
-                    <button class="btn btn-default">.ases-btn-sm</button>
-                    <button class="btn btn-default">.ases-btn-md</button>
-                    <button class="btn btn-default">.ases-btn-lg</button>
+                    <button class="btn btn-default">.btn-xs</button>
+                    <button class="btn btn-default">.btn-sm</button>
+                    <button class="btn btn-default">.btn-md</button>
+                    <button class="btn btn-default">.btn-lg</button>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut iure doloribus sed ex facere, nihil commodi iste provident eius voluptate error voluptatem nam officia sunt similique nemo ipsam illum.
-                    <button class="btn">.ases-btn-xs</button>
-                    <button class="btn">.ases-btn-sm</button>
-                    <button class="btn">.ases-btn-md</button>
-                    <button class="btn">.ases-btn-lg</button>
+                    <button class="btn">.btn-xs</button>
+                    <button class="btn">.btn-sm</button>
+                    <button class="btn">.btn-md</button>
+                    <button class="btn">.btn-lg</button>
                 </div>
                 <div class="col-xs-4 col-sm-6 col-md-3 col-lg-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut iure doloribus sed ex facere, nihil commodi iste provident eius voluptate error voluptatem nam officia sunt similique nemo ipsam illum.

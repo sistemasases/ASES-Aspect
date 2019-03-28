@@ -1,0 +1,22 @@
+.ases-form-control {
+    display: block;
+    width: 100%;
+    background-clip: padding-box;
+}
+  
+  
+.ases-form-control-plaintext {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: solid transparent;
+}
+  
+textarea.ases-form-control {
+    height: auto;
+}
+.form-check-label {
+    margin-bottom: 0; // Override default `<label>` bottom margin
+}
+ 

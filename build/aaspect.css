@@ -740,4 +740,26 @@ html body {
   font-size: calc( calc( 1200px * 1.2920 ) * 0.0366666 * 0.39 );
 }
 
+.ases-form-control {
+  display: block;
+  width: 100%;
+  background-clip: padding-box;
+}
+
+.ases-form-control-plaintext {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: solid transparent;
+}
+
+textarea.ases-form-control {
+  height: auto;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=aaspect.css.map */
