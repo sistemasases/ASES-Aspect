@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -7,10 +13,19 @@ html body {
   margin: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+button {
+  font-size: inherit;
+  padding: 1px 6px 1px 6px;
+  border-width: 2px;
+  color: inherit;
+  line-height: inherit;
 }
 
 .ases-container {
@@ -772,6 +787,7 @@ html body {
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: 700;
+  color: inherit;
 }
 
 .checkbox,
@@ -780,87 +796,110 @@ html body {
   margin-bottom: 10px;
 }
 
+.ases-form-control.textarea {
+  height: auto;
+}
+
 input[type=color].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=date].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=datetime-local].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=file].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=email].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=month].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=number].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=password].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=search].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=tel].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=text].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=time].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=url].ases-form-control {
   height: 34px;
   border-width: 1px;
   padding: 6px 12px 6px 12px;
+  color: inherit;
 }
 
 input[type=week].ases-form-control {
   height: 34px;
   border-width: 1px;
+  padding: 6px 12px 6px 12px;
+  color: inherit;
+}
+
+input[type=range] {
+  height: 34px;
   padding: 6px 12px 6px 12px;
 }
 

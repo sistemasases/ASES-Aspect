@@ -28,6 +28,7 @@
         max-width: 100%;
         margin-bottom: 5px;
         font-weight: 700;
+        color: inherit;
     }
     margin-bottom: 15px;
 }
@@ -36,6 +37,11 @@
 .radio{
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ases-form-control.textarea{
+    height: auto;
 }
 
 @each $_forms_type in $_forms_input_type {
@@ -43,5 +49,11 @@
         height: #{$_forms_input_height};
         border-width: #{$_forms_input_border_width};
         padding: #{$_forms_input_padding};
+        color: inherit;
     }
+}
+
+input[type=range]{
+    height: #{$_forms_input_height};
+    padding: #{$_forms_input_padding};
 }
