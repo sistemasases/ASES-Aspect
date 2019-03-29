@@ -1,7 +1,7 @@
 // Require previous definition of (size) $_containers_base_margin.
 // Require previous definition of (size) $_containers_base_padding.
 
-.ases-container{
+%general_container {
     margin-top: $_containers_base_margin_top;
     margin-right: $_containers_base_margin_right;
     margin-bottom: $_containers_base_margin_bottom;
@@ -10,15 +10,20 @@
     padding-right: $_containers_base_padding_right; 
     padding-bottom: $_containers_base_padding_bottom;
     padding-left: $_containers_base_padding_left;
+    clear: both;
+}
+
+.ases-container{
+    @extend %general_container;
 }
 
 .ases-container-fluid{
-    margin-top: $_containers_base_margin_top;
-    margin-right: $_containers_base_margin_right;
-    margin-bottom: $_containers_base_margin_bottom;
-    margin-left: $_containers_base_margin_left;
-    padding-top: $_containers_base_padding_top;
-    padding-right: $_containers_base_padding_right; 
-    padding-bottom: $_containers_base_padding_bottom;
-    padding-left: $_containers_base_padding_left;
+    @extend %general_container;
+}
+
+.ases-container::after,
+.ases-container::before,
+.ases-container-fluid::after,
+.ases-container-fluid::before{
+    clear: both;
 }
