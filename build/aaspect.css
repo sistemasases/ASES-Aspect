@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+::after, ::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -55,6 +61,11 @@ button {
 .ases-container-fluid .ases-row {
   margin-left: -15px;
   margin-right: -15px;
+}
+.ases-container-fluid .ases-row::after, .ases-container-fluid .ases-row::before {
+  display: table;
+  content: " ";
+  clear: both;
 }
 
 @media (min-width: 0) and (max-width: 767px) {

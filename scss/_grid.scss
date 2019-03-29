@@ -25,6 +25,11 @@
         margin-left: -#{$_containers_base_padding_left};
         margin-right: -#{$_containers_base_padding_right};
     }
+    .ases-row::after,.ases-row::before{
+        display: table;
+        content: " ";
+        clear: both;
+    }
 }
 
 .ases-row{
