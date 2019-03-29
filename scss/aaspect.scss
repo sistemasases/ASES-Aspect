@@ -29,4 +29,23 @@ $_buttons_min_width_padding_relation: 0.0366666;
 @import '_grid.scss';
 @import '_buttons.scss';
 //--------------
+$_forms_input_height: 34px;
+$_forms_input_padding: 6px;
+$_forms_input_border_width: 1px;
+$_forms_input_type: (
+    "color",
+    "date",
+    "datetime-local",
+    "file",
+    "email",
+    "month",
+    "number",
+    "password",
+    "search",
+    "tel",
+    "text",
+    "time",
+    "url",
+    "week",
+);
 @import '_forms.scss'
