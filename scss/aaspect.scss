@@ -52,4 +52,6 @@ $_forms_form_control_outline_color: #66afe9;
 $_forms_form_control_shadow: inset 0 1px 1px rgba(0,0,0,.075);
 $_forms_form_control_outline_shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 $_forms_form_control_trasition_time: 0.15; 
-@import '_forms.scss'
+@import '_forms.scss';
+//--------------
+@import '_icons.scss';
