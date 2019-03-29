@@ -794,6 +794,12 @@ button {
 .radio {
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.checkbox label,
+.radio label {
+  cursor: pointer;
 }
 
 .ases-form-control.textarea {

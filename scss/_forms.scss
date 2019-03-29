@@ -40,6 +40,11 @@
     cursor: pointer;
 }
 
+.checkbox label, 
+.radio label{
+    cursor: pointer;
+}
+
 .ases-form-control.textarea{
     height: auto;
 }
