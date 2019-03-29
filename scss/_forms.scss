@@ -32,6 +32,12 @@
     margin-bottom: 15px;
 }
 
+.checkbox, 
+.radio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @each $_forms_type in $_forms_input_type {
     input[type=#{$_forms_type}].ases-form-control{
         height: #{$_forms_input_height};
