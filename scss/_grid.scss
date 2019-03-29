@@ -32,31 +32,33 @@
     }
 }
 
-.ases-row{
-    @for $_col from 1 through $_grid_number_columns {
-        @each $_col_space in $_grid_base{
+@for $_col from 1 through $_grid_number_columns {
+    @each $_col_space in $_grid_base{
 
-            $col_namespace: nth($_col_space, 1);
-            $min_width: nth($_col_space, 2);
-            $max_width: nth($_col_space, 3);
+        $col_namespace: nth($_col_space, 1);
+        $min_width: nth($_col_space, 2);
+        $max_width: nth($_col_space, 3);
 
-            @if $max-width == 'inf' {
-                @media(min-width: #{$min_width}) {
-                    .ases-col-#{$col_namespace}-#{$_col} {
-                        @include mq_col_base(#{$_col}, #{$_grid_number_columns});
-                    }
-                    .ases-col-#{$col_namespace}-offset-#{$_col} {
-                        @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
-                    }
+        @if $max-width == 'inf' {
+            @media(min-width: #{$min_width}) {
+                .ases-row .ases-col-#{$col_namespace}-#{$_col},
+                .ases-col-#{$col_namespace}-#{$_col} {
+                    @include mq_col_base(#{$_col}, #{$_grid_number_columns});
                 }
-            } @else{
-                @media(min-width: #{$min_width}) and (max-width: #{$max_width})  {
-                    .ases-col-#{$col_namespace}-#{$_col} {
-                        @include mq_col_base(#{$_col}, #{$_grid_number_columns});
-                    }
-                    .ases-col-#{$col_namespace}-offset-#{$_col} {
-                        @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
-                    }
+                .ases-row .ases-col-#{$col_namespace}-offset-#{$_col},
+                .ases-col-#{$col_namespace}-offset-#{$_col} {
+                    @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
+                }
+            }
+        } @else{
+            @media(min-width: #{$min_width}) and (max-width: #{$max_width})  {
+                .ases-row .ases-col-#{$col_namespace}-#{$_col},
+                .ases-col-#{$col_namespace}-#{$_col} {
+                    @include mq_col_base(#{$_col}, #{$_grid_number_columns});
+                }
+                .ases-row .ases-col-#{$col_namespace}-offset-#{$_col}
+                .ases-col-#{$col_namespace}-offset-#{$_col} {
+                    @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
                 }
             }
         }
