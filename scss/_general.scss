@@ -42,6 +42,10 @@ button{
     line-height: inherit;
 }
 
-[hidden] {
+[hidden]{
+    display: none !important;
+}
+
+template{
     display: none !important;
 }
