@@ -34,6 +34,10 @@ button {
   line-height: inherit;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .ases-container-fluid, .ases-container {
   margin-top: 0px;
   margin-right: auto;
