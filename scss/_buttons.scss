@@ -69,3 +69,24 @@
         }
     }
 }
+
+.badge{
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    $_buttons_badge_color: #fff;
+    @if $_buttons_badge_color {
+        color: $_buttons_badge_color;
+    }
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    $_buttons_badge_background_color: #777 !default;
+    @if $_buttons_badge_background_color {
+        background-color: $_buttons_badge_background_color;
+    }
+    border-radius: 10px;
+}
