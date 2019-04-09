@@ -17,14 +17,15 @@
     box-sizing: border-box;
 }
 
-html{
-    body{
+body{
+    $_general_font_family: "Helvetica Neue",Helvetica,Arial,sans-serif !default;
+    @if $_general_font_family {
         font-family: $_general_font_family;
-        font-size: $_general_size;
-        line-height: $_general_height;
-        color: $_general_color;
-        background-color: $_general_background_color;
     }
+    font-size: $_general_size;
+    line-height: $_general_height;
+    color: $_general_color;
+    background-color: $_general_background_color;
 }
 
 hr{
