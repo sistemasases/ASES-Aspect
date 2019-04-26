@@ -2194,7 +2194,7 @@ input[type=range] {
   display: none;
 }
 
-.ases-tab-content > .ases-active {
+.ases-tab-content > .ases-tab-active {
   display: block;
 }
 
