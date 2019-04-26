@@ -8,6 +8,8 @@ $_general_background_color: #fff;
 $_general_link_color: #337ab7;
 @import '_general.scss';
 //--------------
+@import '_transitions.scss';
+//--------------
 $_containers_base_margin_top: 0px;
 $_containers_base_margin_right: auto;
 $_containers_base_margin_bottom: 0px;
