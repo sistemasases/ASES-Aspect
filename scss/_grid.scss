@@ -60,7 +60,7 @@
                 .ases-col-#{$col_namespace}-#{$_col} {
                     @include mq_col_base(#{$_col}, #{$_grid_number_columns});
                 }
-                .ases-row .ases-col-#{$col_namespace}-offset-#{$_col}
+                .ases-row .ases-col-#{$col_namespace}-offset-#{$_col},
                 .ases-col-#{$col_namespace}-offset-#{$_col} {
                     @include mq_col_offset_base(#{$_col}, #{$_grid_number_columns});
                 }
