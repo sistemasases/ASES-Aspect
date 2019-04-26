@@ -47,6 +47,17 @@ template {
   display: none !important;
 }
 
+.ases-fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.ases-fade.ases-in {
+  opacity: 1;
+}
+
 .ases-container-fluid, .ases-container {
   margin-top: 0px;
   margin-right: auto;
@@ -2141,9 +2152,14 @@ input[type=range] {
   list-style: none;
 }
 
-.ases-nav-pills > li.active > a, -pills > li.active > a:focus, .ases-nav-pills > li.active > a:hover {
+.ases-nav-pills > li.ases-active > a, .ases-nav-pills > li.ases-active > a:focus,
+.ases-nav-pills > li.ases-active > a:hover {
   color: #fff;
   background-color: #337ab7;
+}
+
+.ases-nav-pills > li:hover > a {
+  background-color: #eeeeee;
 }
 
 .ases-nav-pills > li > a {
