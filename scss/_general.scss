@@ -43,6 +43,14 @@ button{
     line-height: inherit;
 }
 
+a{
+    $_general_link_color: #337ab7 !default;
+    @if $_general_link_color {
+        color: $_general_link_color;
+    }
+    text-decoration: none;
+}
+
 [hidden]{
     display: none !important;
 }

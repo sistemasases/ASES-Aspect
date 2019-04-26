@@ -5,6 +5,7 @@ $_general_size: 14px;
 $_general_height: 1.42857143;
 $_general_color: #333;
 $_general_background_color: #fff;
+$_general_link_color: #337ab7;
 @import '_general.scss';
 //--------------
 $_containers_base_margin_top: 0px;
@@ -54,3 +55,5 @@ $_forms_form_control_trasition_time: 0.15;
 @import '_forms.scss';
 //--------------
 @import '_icons.scss';
+//--------------
+@import '_tabs.scss';
