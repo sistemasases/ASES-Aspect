@@ -2234,4 +2234,64 @@ input[type=range] {
   display: block;
 }
 
+.ases-success {
+  border: 1px solid #54a854;
+  background: #f5fff6;
+  color: #54a854;
+}
+
+.ases-success:hover {
+  border: 1px solid #54a854;
+  background: #54a854;
+  color: #ffffff;
+}
+
+.ases-warning {
+  border: 1px solid #ffa330;
+  background: #fff8f5;
+  color: #ffa330;
+}
+
+.ases-warning:hover {
+  border: 1px solid #ffa330;
+  background: #ffa330;
+  color: #ffffff;
+}
+
+.ases-danger {
+  border: 1px solid #ff3030;
+  background: #fff5f5;
+  color: #ff3030;
+}
+
+.ases-danger:hover {
+  border: 1px solid #ff3030;
+  background: #ff3030;
+  color: #ffffff;
+}
+
+.ases-info {
+  border: 1px solid #2dbcd8;
+  background: #f5fffe;
+  color: #2dbcd8;
+}
+
+.ases-info:hover {
+  border: 1px solid #2dbcd8;
+  background: #2dbcd8;
+  color: #ffffff;
+}
+
+.ases-primary {
+  border: 1px solid #30acff;
+  background: #f5fffe;
+  color: #30acff;
+}
+
+.ases-primary:hover {
+  border: 1px solid #30acff;
+  background: #30acff;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=aaspect.css.map */
