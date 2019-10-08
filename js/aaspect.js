@@ -36,6 +36,6 @@
 	    change_tab_to( this );
 	}
 
-	$(document).on( 'click', '[data-toggle="pill"]', click_handler );
+	$( document ).on( 'click', '[data-toggle="ases-pill"]', click_handler );
 
 }( jQuery );
