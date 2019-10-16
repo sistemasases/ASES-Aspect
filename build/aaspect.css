@@ -70,6 +70,27 @@ template {
   clear: both;
 }
 
+@media (min-width: 0) and (max-width: 767px) {
+  .ases-container {
+    width: 621.27px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ases-container {
+    width: 802.71px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ases-container {
+    width: 971.19px;
+  }
+}
+@media (min-width: 1200px) {
+  .ases-container {
+    width: 1170px;
+  }
+}
+
 .ases-container::after,
 .ases-container::before,
 .ases-container-fluid::after,

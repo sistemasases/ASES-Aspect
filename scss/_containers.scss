@@ -15,6 +15,22 @@
 
 .ases-container{
     @extend %general_container;
+    @each $_col_space in $_grid_base{
+
+        $col_namespace: nth($_col_space, 1);
+        $min_width: nth($_col_space, 2);
+        $max_width: nth($_col_space, 3);
+
+        @if $max-width == 'inf' {
+            @media(min-width: #{$min_width}) {
+                width: (  $min_width * 0.975 );
+            }
+        } @else{
+            @media(min-width: #{$min_width}) and (max-width: #{$max_width})  {
+                width: (  $max_width * 0.81 );
+            }
+        }
+    }
 }
 
 .ases-container-fluid{
