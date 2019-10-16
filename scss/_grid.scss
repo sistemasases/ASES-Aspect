@@ -24,7 +24,7 @@
     clear: both;
 }
 
-.ases-container-fluid{
+.ases-container-fluid, .ases-container{
     .ases-row{
         margin-left: -#{$_containers_base_padding_left};
         margin-right: -#{$_containers_base_padding_right};

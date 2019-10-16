@@ -102,11 +102,11 @@ template {
   clear: both;
 }
 
-.ases-container-fluid .ases-row {
+.ases-container-fluid .ases-row, .ases-container .ases-row {
   margin-left: -15px;
   margin-right: -15px;
 }
-.ases-container-fluid .ases-row::after, .ases-container-fluid .ases-row::before {
+.ases-container-fluid .ases-row::after, .ases-container-fluid .ases-row::before, .ases-container .ases-row::after, .ases-container .ases-row::before {
   display: table;
   content: " ";
   clear: both;
